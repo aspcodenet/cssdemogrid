@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            border:none;
+            padding:0;
+            margin:0;
+        }
+        .container{
+            height:100vh;
+            display: grid;
+            grid-template-areas: 
+                "t t"
+                "a m"
+                "f f";
+            grid-template-columns: 120px 1fr;                
+            grid-template-rows: 60px auto  60px;
+        }
+        header{
+            grid-area: t;
+        }
+
+        aside{
+            grid-area: a;
+        }
+        main{
+            grid-area: m;
+        }
+        footer{
+            grid-area: f;
+        }
+
+
+        .item{
+            border: 1px solid red;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="item">image<h1>Hallo</h1></header>
+        <aside class="item">SIDEBAR<br><br><br><br><br>Tjena</aside>
+  
+        <main class="item">mainhej</main>
+        <footer class="item">footer<div>asdadsa</div></footer>
+  
+      </div>    
+</body>
+</html>
